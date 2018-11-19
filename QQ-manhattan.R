@@ -1,0 +1,5 @@
+library(qqman)
+gwasResults<- read.table(file="MF-specific.sorted",header=T)
+png(file="Mahhatan for MF-specific.png")
+manhattan(gwasResults,main="Mahhatan for MF-specific",suggestiveline=F,genomewideline=0,cex=0.5,ylim=c(0,500))
+dev.off()
